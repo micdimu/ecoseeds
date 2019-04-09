@@ -1,0 +1,11 @@
+Package: ecoseeds
+Type: Package
+Title: From germination ecology to dispersal ability
+Version: 0.1.0
+Author: Michele Di Musciano
+Maintainer: Michele Di Musciano <michele.dimusciano@graduate.univaq.it>
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
