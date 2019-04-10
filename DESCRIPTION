@@ -7,7 +7,6 @@ Maintainer: Michele Di Musciano <michele.dimusciano@graduate.univaq.it>
 Description: The package analyse the germination data and seeds traits with straight statistical approach.
 License: 
 Imports:
-    dplyr,
     plyr,
     ggplot2,
     agricolae,
