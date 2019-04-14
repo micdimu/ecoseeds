@@ -1,6 +1,6 @@
 Package: ecoseeds
 Type: Package
-Title: From germination ecology to dispersal ability
+Title: Seed ecology - germination and morphometric analysis
 Version: 0.1.0
 Author: Michele Di Musciano
 Maintainer: Michele Di Musciano <michele.dimusciano@graduate.univaq.it>
@@ -12,6 +12,9 @@ Imports:
     agricolae,
     reshape,
     gdata,
-    vegan
+    vegan,
+    MASS,
+    plotly,
+    devtools
 Encoding: UTF-8
 LazyData: true
