@@ -11,13 +11,9 @@ Weibull<-function(Germ.Analysis.exp, Test.int=levels(Germ.Analysis.exp$test_type
   vTia<-c()
   for(i in 1:length(Test.int)){
     lTi[[i]]=which(Germ.Analysis.exp$test_type==Test.int[i])
-    if(length(lTi[[1]])!=length(lTi[[i]])){
-      stop("Number of replicates for each test must be the same")
-    }
     vTia[i]=which(levels(Germ.Analysis.exp$test_type)==Test.int[i])
   }
-  mTi <- laply(lTi, function(x) x)
-  vTi = sort(as.vector(t(mTi)))
+  vTi <- sort(do.call(c, lTi))
   vTia=sort(vTia)
 
   test<-Germ.Analysis.exp$test_type[vTi]

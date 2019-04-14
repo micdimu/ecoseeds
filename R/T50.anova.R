@@ -10,12 +10,8 @@ T50.anova<-function(Germ.Analysis.exp, Test.int=levels(Germ.Analysis.exp$test_ty
   lTi<-list()
   for(i in 1:length(Test.int)){
     lTi[[i]]=which(Germ.Analysis.exp$test_type==Test.int[i])
-    if(length(lTi[[1]])!=length(lTi[[i]])){
-      stop("Number of replicates for each test must be the same")
-    }
   }
-  mTi <- laply(lTi, function(x) x)
-  vTi = sort(as.vector(t(mTi)))
+  vTi <- sort(do.call(c, lTi))
 
   T50<-Germ.Analysis.exp$T50_SP[vTi]
   Fin_germ<-Germ.Analysis.exp$M_SP[vTi]
