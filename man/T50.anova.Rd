@@ -3,7 +3,7 @@
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{T50.anova}
 
-\description{The function performs anova and Tukey test than plot results using barplots, different letters indicate significant differences among test. The figure is automatically saved in 16:9 at 300 dpi.
+\description{The function performs ANOVA and Tukey test. The results are plotted using boxplots, different letters indicate significant differences among test. The figure is automatically saved in 16:9 at 300 dpi.
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
 }
 \usage{
@@ -11,9 +11,9 @@ T50.anova(Germination.Analysis.output, colour = "yes", Test.int)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
-  \item{Germination.Analysis.output}{}
-  \item{colour}{can be "yes" (coloured by test.type) or "no" (BAW output) or a vector that specify the groups of test (length of vector must be equal to n° of petri)}
-  \item{Test.int}{character vector where are indicated the types of test that would be compared}
+  \item{Germination.Analysis.output}{output from Germination.Analysis function}
+  \item{colour}{can be "yes" (coloured by test.type) or "no" (B/W output) or a vector that specify the groups of tests (length of vector must be equal to n° of petri)}
+  \item{Test.int}{character vector where are indicated the types of tests that would be compared}
 %%     ~~Describe \code{x} here~~
 
 }
@@ -25,7 +25,7 @@ T50.anova(Germination.Analysis.output, colour = "yes", Test.int)
 %%  If it is a LIST, use
   \item{Anova }{anova results, summary(aov)}
   \item{Tukey }{Post-hoc Tukey test output}
-  \item{Test }{Test compared}
+  \item{Test }{Tests compared}
   \item{T50 }{T50 for each test analysed}
   \item{Boxplot_T50 }{ggplot output}
 

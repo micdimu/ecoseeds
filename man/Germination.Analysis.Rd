@@ -14,7 +14,7 @@ Germination.Analysis(germ_dyn, Nv.seed=NULL, cv=1.5, n.seed=20)
 \arguments{
   \item{germ_dyn}{germination dynamic matrix, row=tests, col=days, frist column=type of test }
   \item{n.seed}{number of seeds for each petri}
-  \item{Nv.seed}{Number of not empty seeds, must be a vector or the column number where this values are located}
+  \item{Nv.seed}{Number of not empty seeds, must be a vector or the column number where these values are located}
   \item{cv}{Weibull curve shape parameter}
 
 %%     ~~Describe \code{x} here~~
@@ -24,7 +24,7 @@ Germination.Analysis(germ_dyn, Nv.seed=NULL, cv=1.5, n.seed=20)
 %%  ~~ If necessary, more details than the description above ~~
 }
 \value{
-  \item{test_type}{type of test}
+  \item{test_type}{types of tests}
   \item{Dyn_perc_germ_SP}{Germination percentage for each day - each petri}
   \item{M_SP}{Final germination percentage each petri}
   \item{Z_SP}{Germination delay each petri}
