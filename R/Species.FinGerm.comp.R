@@ -6,6 +6,8 @@ Species.FinGerm.comp<-function(Germ.Analysis.exp_sp1, Germ.Analysis.exp_sp2, sp_
 
   int_comm_test<-intersect(Germ.Analysis.exp_sp1$test_type, Germ.Analysis.exp_sp2$test_type)
 
+  if(length(int_comm_test)==0) stop('No tests matching between taxa')
+
   sel_comm_test_sp1<-Germ.Analysis.exp_sp1$test_type %in% int_comm_test
   sel_comm_test_sp2<-Germ.Analysis.exp_sp2$test_type %in% int_comm_test
 
@@ -57,7 +59,7 @@ Species.FinGerm.comp<-function(Germ.Analysis.exp_sp1, Germ.Analysis.exp_sp2, sp_
   Legend1=comm_sp1_sp2$test_sp
 
   Boxplot_com_spe<-ggplot(comm_sp1_sp2, aes(x=Legend1, y = M)) +
-    geom_boxplot(aes(group=Legend1, y = M, col=Legend1))+
+    geom_boxplot(aes(group=Legend1, y = M, col=Legend))+
     geom_text(data=sign_t, aes(x=c(1:nlevels(Legend1)), label = sign,
                                y=aggregate(comm_sp1_sp2$M, by=list(Legend1), max)[,2]+5),size=5)+
     theme(axis.text.x = element_text(angle = 45, hjust = 1))+
