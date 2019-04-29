@@ -35,7 +35,7 @@ Species.Z.comp<-function(Germ.Analysis.exp_sp1, Germ.Analysis.exp_sp2, sp_name=N
 
   if(is.null(sp_name)){
     comm_sp1$sp_name<-rep(c("sp_1"), nrow(comm_sp1))
-    comm_sp2$sp_name<-rep(c("sp_2"), nrow(comm_sp1))
+    comm_sp2$sp_name<-rep(c("sp_2"), nrow(comm_sp2))
   } else {
     comm_sp1$sp_name<-rep(sp_name[1], nrow(comm_sp1))
     comm_sp2$sp_name<-rep(sp_name[2], nrow(comm_sp2))
