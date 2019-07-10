@@ -140,12 +140,13 @@ plot_lda<-ggplot(owd, aes(x=LD1, y=LD2, col=Legend)) + geom_point( size = 1.5, a
 
 
 if(nlevels(as.factor(morpho$group))>3){
-p<-plot_ly(data=owd, x=~LD1, y=~LD2, z=~LD3,  color=~Legend,colors="YlOrRd", type="scatter3d", mode ="markers" )}
+p<-plot_ly(data=owd, x=~LD1, y=~LD2, z=~LD3,  color=~Legend,colors="YlOrRd", type="scatter3d", mode ="markers" )
+show(p)}
 
 
 ggsave("morpho_lda.tiff", plot = plot_lda, width = 174, height = 98, units = c("mm"),dpi = 300)
 plot(plot_lda)
-show(p)
+
 
 lda_group<-list(morpho.lda,  mtrain, mtest, conf_train_mean, conf_test_mean, plot_lda)
 names(lda_group)=c("morpho.lda", "accuracy_train", "accuracy_test", "confusion_train", "confusion_test", "plot_lda")
