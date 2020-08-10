@@ -25,7 +25,7 @@
   \item{M_env}{Final germination percentage each petri with associated environmental varable}
   \item{Z_env}{Germination delay each petri with associated environmental varable}
   \item{T50_env}{T50 each petri with associated environmental varable}
-  \item{Plot_M_env}{Smoothed fit for final germination percentage, with boxplot for each test}
+  \item{Plot_M_env}{Smoothed fit for final germination percentage with boxplot for each test}
   \item{Plot_Z_env}{Smoothed fit for germination delay with boxplot for each test}
   \item{Plot_T50_env}{Smoothed fit for germination speed T50 with boxplot for each test}
 }
