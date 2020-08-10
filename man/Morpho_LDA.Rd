@@ -17,7 +17,7 @@ Morpho_LDA(Morpho_df, N.iter=100, split_size=0.80)
   \item{split_size}{Number from 0 to 1 to split training test data}
 %%     ~~Describe \code{x} here~~
 }
-}
+
 \details{
 %%  ~~ If necessary, more details than the description above ~~
 }
