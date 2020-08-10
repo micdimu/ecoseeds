@@ -17,7 +17,7 @@
 
 %%     ~~Describe \code{x} here~~
 }
-}
+
 \details{
   \item{M_env}{Final germination percentage each petri, with associated environmental varable}
   \item{Z_env}{Germination delay each petri, with associated environmental varable}
